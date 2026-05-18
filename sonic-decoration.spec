@@ -11,7 +11,7 @@
 Summary:	Library for handling window decorations
 Name:		sonic-decoration
 Version:	6.6.5
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 License:	LGPL
 Group:		System/Libraries
 Url:		https://github.com/Sonic-DE/sonic-decoration
@@ -26,9 +26,8 @@ BuildRequires:	pkgconfig(Qt6Gui)
 BuildRequires:	pkgconfig(Qt6Test)
 BuildRequires:	cmake(KF6I18n)
 
-# pending rename
+# verify not required
 # BuildRequires:	cmake(KF6CoreAddons)
-BuildRequires: %{_lib}SonicFrameworksCoreAddons-devel
 
 BuildRequires:	cmake(ECM)
 
