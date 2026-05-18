@@ -50,6 +50,9 @@ Conflicts: %{_lib}kdecorations3
 %description -n %{libname}
 %summary
 
+%install -a
+rm -rf %{buildroot}/%{_libdir}/cmake
+
 %files -n %{libname} -f %{name}.lang
 %{_libdir}/libkdecorations3.so.*
 %{_libdir}/libkdecorations3private.so.*
@@ -66,5 +69,8 @@ Development files for %{name}.
 %files -n %{devname}
 %{_includedir}/KF6/kdecoration3_version.h
 %{_includedir}/KDecoration3
-%{_libdir}/*.so
-%{_libdir}/cmake/KDecoration3
+%{_libdir}/libkdecorations3.*
+%{_libdir}/libkdecorations3private.*
+
+# pending rename
+# %{_libdir}/cmake/KDecoration3
