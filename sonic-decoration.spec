@@ -10,7 +10,7 @@
 
 Summary:	Library for handling window decorations
 Name:		sonic-decoration
-Version:	6.6.5
+Version:	6.7.3
 Release:	%{?git:0.%{git}.}2
 License:	LGPL
 Group:		System/Libraries
