@@ -11,7 +11,7 @@
 Summary:	Library for handling window decorations
 Name:		sonic-decoration
 Version:	6.7.3
-Release:	%{?git:0.%{git}.}2
+Release:	%{?git:0.%{git}.}3
 License:	LGPL
 Group:		System/Libraries
 Url:		https://github.com/Sonic-DE/sonic-decoration
@@ -49,9 +49,6 @@ Conflicts: %{_lib}kdecorations3
 %description -n %{libname}
 %summary
 
-%install -a
-rm -rf %{buildroot}/%{_libdir}/cmake
-
 %files -n %{libname} -f %{name}.lang
 %{_libdir}/libkdecorations3.so.*
 %{_libdir}/libkdecorations3private.so.*
@@ -70,6 +67,4 @@ Development files for %{name}.
 %{_includedir}/KDecoration3
 %{_libdir}/libkdecorations3.*
 %{_libdir}/libkdecorations3private.*
-
-# pending rename
-# %{_libdir}/cmake/KDecoration3
+%{_libdir}/cmake/KDecoration3
